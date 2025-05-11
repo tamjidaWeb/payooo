@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+        <header>
+            <nav class="flex justify-between items-center mx-2">
+              <div class="flex justify-between items-center">
+                <img src="assets/Group.png" alt="">
+                <div>
+                    <h1 class="text-3xl font-bold">$ <span id="updated-balance">4500</span></h1>
+                    <p>Available Balance</p>
+                </div>
+              </div>
+                <button>Log in</button>
+            </nav>
+
+            <section class="mt-10 mx-2 ">
+                <h1 class="mb-2 font-bold text-2xl">Welcom to payoo!</h1>
+                <p>Enjoy easy and convenient financial services with us.Cashout charge is at low price.</p>
+
+                <div class="cards grid grid-cols-3 mt-14 gap-2">
+                    <div id="add-money-card" class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="assets/purse1.png" alt="">
+                        <h3>Add money</h3>
+                    </div>
+                    <div id="cash-out-card" class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="assets/money1.png" alt="">
+                        <h3>Cash Out</h3>
+                    </div>
+                    <div id="transaction-history-card" class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="assets/send1.png" alt="">
+                        <h3>Transaction History</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
+                        <h3>Transaction</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
+                        <h3>Donate</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="assets/purse1.png" alt="">
+                        <h3>History</h3>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Add Money -->
+            <section id="add-money">
+                <h1 class="mx-2 mt-6 font-bold text-2xl">Add Money</h1>
+                <div class="">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                     
+                      <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <legend>Bank</legend>
+                            <select class="select">
+                                <option disabled selected>Select Bank</option>
+                                <option value="Bkash">Bkash</option>
+                                <option value="Nagad">Nagad</option>
+                                <option value="DBBL">DBBL</option>
+                              </select>
+                              <form class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <div class="card-body">
+                                  <fieldset class="fieldset">
+                                    <label class="label">Acount Number</label>
+                                    <input value="016" id="account-number" type="text" class="input" placeholder="Account Number" required/>
+                                    <label class="label">Money Amount</label>
+                                    <input id="amount" type="text" class="input" placeholder="Type your Amount" required/>
+                                    <label class="label">PIN</label>
+                                    <input  id="pin-number" type="text" class="input" placeholder="Type your PIN" required/>
+                                    <button id="add-money-btn" class="btn btn-neutral bg-blue-900 border-none mt-4">Add Money</button>
+                                  </fieldset>
+                                </div>
+                              </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+
+            <!-- cash Out -->
+            <section id="cash-out">
+                <h1 class="mx-2 mt-6 font-bold text-2xl">Cash Out</h1>
+                <div class="">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                     
+                      <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <legend>Bank</legend>
+                            <select class="select">
+                                <option disabled selected>Select Bank</option>
+                                <option value="Bkash">Bkash</option>
+                                <option value="Nagad">Nagad</option>
+                                <option value="DBBL">DBBL</option>
+                              </select>
+                              <form class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <div class="card-body">
+                                  <fieldset class="fieldset">
+                                    <label class="label">Acount Number</label>
+                                    <input value="01630" id="account-number" type="text" class="input" placeholder="Account Number" required/>
+                                    <label class="label">Money Amount</label>
+                                    <input id="amount" type="text" class="input" placeholder="Type your Amount" required/>
+                                    <label class="label">PIN</label>
+                                    <input  id="pin-number" type="text" class="input" placeholder="Type your PIN" required/>
+                                    <button id="add-money-btn" class="btn btn-neutral bg-blue-900 border-none mt-4">Add Money</button>
+                                  </fieldset>
+                                </div>
+                              </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+
+            <!-- Transaction History -->
+            <section id="transaction-history" class="mx-2">
+              <h1 class="text-2xl font-bold text-center p-3">Transaction History</h1>
+            </section>
+        </header>
+
+    </section>
+
+   
+    <h1>hello</h1>
+
+    <!-- <script src="add-money.js"></script> -->
+    <script src="recape.js"></script>
+    <script src="toggle.js"></script>
+    <script src="transaction.js"></script>
+</body>
+</html>
